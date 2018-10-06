@@ -1,16 +1,16 @@
 {
-  "name": "webpack-mix-builder",
+  "name": "@dwmaj/workflow",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "src/index.html",
   "scripts": {
-    "build": "gulp",
+    "build": "npm run lint && gulp",
     "watch": "gulp watch",
-    "test": "node_modules/stylelint/bin/stylelint.js 'src/sass/*.scss' --config .stylelintrc.json && node_modules/eslint/bin/eslint.js src/js"
+    "lint": "stylelint 'src/styles/*.scss' --config .stylelintrc.json && eslint src/scripts"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC",
+  "license": "SEE LICENSE IN UNLICENSE",
   "devDependencies": {
     "gulp": "^3.9.1",
     "del": "^3.0.0",

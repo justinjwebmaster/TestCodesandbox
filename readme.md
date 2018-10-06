@@ -17,7 +17,7 @@
 ## Commands
 
 - `npm run watch` : build on files changes, launch a dev server with browsersync.
-- `npm run test` : run a linter on scss and js files.
+- `npm run lint` : run a linter on scss and js files.
 - `npm run build` : build the project.
 
 ## Linters
