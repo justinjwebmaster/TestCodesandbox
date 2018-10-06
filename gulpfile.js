@@ -10,10 +10,10 @@ elixir((mix) => {
     .copy('src/**/*.html', 'dist/')
     .copy('src/assets/', 'dist/')
 
-    .scriptsIn('src/js/', 'dist/js/app.js')
+    .scriptsIn('src/scripts/', 'dist/scripts/app.js')
 
-    .sass('app.scss', 'dist/css/app.css', 'src/sass', { outputStyle: 'expanded' })
-    .sass('app.scss', 'dist/css/app.min.css', 'src/sass', { outputStyle: 'compressed' })
+    .sass('app.scss', 'dist/styles/app.css', 'src/styles', { outputStyle: 'expanded' })
+    .sass('app.scss', 'dist/styles/app.min.css', 'src/styles', { outputStyle: 'compressed' })
 
     .browserSync({
       proxy: false,
