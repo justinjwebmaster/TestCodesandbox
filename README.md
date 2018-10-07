@@ -1,4 +1,4 @@
-# Simple Gulp Workflow with Laravel Elixir.
+# Simple Workflow with Laravel Mix.
 
 ## Install
 
@@ -8,11 +8,12 @@
 
 - Copy `src/*.html` to `dist` folder.
 - Copy `src/assets/*/` to `dist/assets/*/` folder.
-- Compile SASS `src/styles/app.scss` to `dist/styles` folder (one `app.css` uncompressed version and one `app.min.css` minified version).
-- Concatenate all JS files from `src/scripts/` to `dist/scripts/app.js` folder.
+- Compile SASS `src/styles/app.scss` to `dist/styles` folder.
+- Bundle and transpile JS `src/scripts/app.js` to `dist/scripts` folder.
 - Create sources maps.
 - Run a dev web server with browsersync.
 - Run linter on SCSS and JS files.
+- Optimize assets on production mode (build).
 
 ## Commands
 
