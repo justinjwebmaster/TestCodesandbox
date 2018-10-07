@@ -5,7 +5,8 @@
   "main": "src/index.html",
   "scripts": {
     "clean": "rimraf dist",
-    "start": "gulp watch",
+    "start": "npm run watch",
+    "watch": "gulp watch",
     "build": "npm run clean && npm run lint && gulp",
     "lint": "stylelint 'src/styles/*.scss' --config .stylelintrc.json && eslint src/scripts"
   },
