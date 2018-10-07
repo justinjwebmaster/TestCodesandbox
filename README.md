@@ -2,12 +2,12 @@
 
 ## Install
 
-- `npm install`
+- `npm i`
 
 ## Features
 
 - Copy `src/*.html` to `dist` folder.
-- Copy `src/assets/*/` to `dist/*/` folder (ie :  `src/assets/images/` to `dist/images/`).
+- Copy `src/assets/*/` to `dist/assets/*/` folder.
 - Compile SASS `src/styles/app.scss` to `dist/styles` folder (one `app.css` uncompressed version and one `app.min.css` minified version).
 - Concatenate all JS files from `src/scripts/` to `dist/scripts/app.js` folder.
 - Create sources maps.
@@ -16,9 +16,10 @@
 
 ## Commands
 
-- `npm run watch` : build on files changes, launch a dev server with browsersync.
+- `npm start` : build on files changes, launch a dev server with browsersync.
+- `npm run build` : clean, lint and build the project.
+- `npm run clean` : clean the `dist` folder.
 - `npm run lint` : run a linter on scss and js files.
-- `npm run build` : build the project.
 
 ## Linters
 

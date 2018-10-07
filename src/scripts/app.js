@@ -1,6 +1,1 @@
-
-/* app.js
------------------------------------------------------------------- */
-
-console.log('Hello,');
-console.log('Welcome.');
+console.info('Hello world');

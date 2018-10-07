@@ -1,4 +1,4 @@
-const gulp   = require('gulp');
+const gulp = require('gulp'); // eslint-disable-line no-unused-vars
 const elixir = require('laravel-elixir');
 
 elixir.config.publicPath = 'dist';
@@ -8,7 +8,7 @@ elixir.config.css.autoprefix.options.browsers = ['last 2 versions'];
 elixir((mix) => {
   mix
     .copy('src/**/*.html', 'dist/')
-    .copy('src/assets/', 'dist/')
+    .copy('src/assets/', 'dist/assets/')
 
     .scriptsIn('src/scripts/', 'dist/scripts/app.js')
 
