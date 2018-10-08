@@ -8,7 +8,7 @@
     "clean": "rimraf dist",
     "dev": "NODE_ENV=development webpack --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
     "hot": "NODE_ENV=development webpack-dev-server --inline --hot --config=node_modules/laravel-mix/setup/webpack.config.js",
-    "lint": "stylelint 'src/styles/*.scss' --config .stylelintrc.json && eslint src/scripts",
+    "lint": "stylelint 'src/styles/**/*.scss' --config .stylelintrc.json && eslint src/scripts",
     "production": "NODE_ENV=production webpack --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
     "start": "npm run watch",
     "watch": "NODE_ENV=development webpack --watch --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js"
