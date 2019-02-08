@@ -1,6 +1,6 @@
 {
   "name": "@dwmaj/workflow",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "",
   "main": "src/index.html",
   "scripts": {
@@ -24,6 +24,7 @@
     "gulp": "^3.9.1",
     "laravel-elixir": "^6.0.0-18",
     "laravel-elixir-browsersync-official": "^1.0.0",
+    "natives": "^1.1.6",
     "rimraf": "^2.6.2",
     "stylelint": "^9.6.0",
     "stylelint-config-standard": "^18.2.0"
