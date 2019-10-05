@@ -33,6 +33,14 @@ mix
     files: [
       'dist/**/*'
     ]
+  })
+  .webpackConfig({
+    resolve: {
+      modules: [
+        'src/scripts',
+        'node_modules'
+      ]
+    }
   });
 
 if (!mix.inProduction()) {
