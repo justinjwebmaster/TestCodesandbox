@@ -17,7 +17,7 @@
   "author": "",
   "license": "SEE LICENSE IN UNLICENSE",
   "devDependencies": {
-    "babel-preset-env": "^1.7.0",
+    "@babel/preset-env": "^7.6.2",
     "browser-sync": "^2.26.7",
     "browser-sync-webpack-plugin": "^2.0.1",
     "eslint": "^6.5.1",
