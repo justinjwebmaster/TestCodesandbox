@@ -18,19 +18,23 @@
   "license": "SEE LICENSE IN UNLICENSE",
   "devDependencies": {
     "babel-preset-env": "^1.7.0",
-    "browser-sync": "^2.26.0",
+    "browser-sync": "^2.26.7",
     "browser-sync-webpack-plugin": "^2.0.1",
-    "eslint": "^5.6.1",
-    "eslint-config-standard": "^12.0.0",
+    "eslint": "^6.5.1",
+    "eslint-config-standard": "^14.1.0",
     "eslint-plugin-import": "^2.14.0",
-    "eslint-plugin-node": "^7.0.1",
+    "eslint-plugin-node": "^10.0.0",
     "eslint-plugin-promise": "^4.0.1",
     "eslint-plugin-standard": "^4.0.0",
-    "imagemin": "^6.0.0",
-    "laravel-mix": "^2.1.14",
-    "rimraf": "^2.6.2",
-    "stylelint": "^9.6.0",
-    "stylelint-config-standard": "^18.2.0",
-    "stylelint-scss": "^3.11.1"
+    "imagemin": "^7.0.0",
+    "laravel-mix": "^5.0.0",
+    "resolve-url-loader": "^3.1.0",
+    "rimraf": "^3.0.0",
+    "sass": "^1.23.0",
+    "sass-loader": "^8.0.0",
+    "stylelint": "^11.0.0",
+    "stylelint-config-standard": "^19.0.0",
+    "stylelint-scss": "^3.11.1",
+    "vue-template-compiler": "^2.6.10"
   }
 }
