@@ -13,7 +13,7 @@ const mix = require('laravel-mix');
 
 mix
   .copy('src/**/*.html', 'dist/')
-  .copy('src/assets/', 'dist/assets/')
+  .copyDirectory('src/assets', 'dist/assets')
   .js('src/scripts/app.js', 'dist/scripts/')
   .sass('src/styles/app.scss', 'dist/styles/')
   .options({
