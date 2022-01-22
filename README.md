@@ -15,7 +15,7 @@
 
 ## Commands
 
-- `npm start` : build on files changes, launch a dev server with browsersync.
+- `npx mix watch` : build on files changes, launch a dev server with browsersync.
 - `npm run build` : clean, lint and build the project.
 - `npm run clean` : clean the `dist` folder.
 
