@@ -6,9 +6,13 @@ All packages are configured in the package.json.
 
 - `npm i`
 
+## Config
+
+If build on school machine fail, set `useImageOptim` to `false` in `gulpfile.js`
+
 ## Features
 
--  Copy `src/*.html` to `dist` folder.
+- Copy `src/*.html` to `dist` folder.
 - Copy `src/assets/*/` to `dist/assets/*/` folder.
 - Compile SASS `src/styles/app.scss` to `dist/styles` folder.
 - Bundle and transpile JS `src/scripts/app.js` to `dist/scripts` folder.

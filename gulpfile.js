@@ -12,12 +12,16 @@ const argv = require('yargs').argv;
 /**
  * Config
  */
+const useImageOptim = true; // If build on school machine fail, change to false
+
 const isProduction = (argv.production === undefined) ? false : true;
 const config = {};
 if (isProduction) {
     config.env = 'production';
+    config.sassOutputStyle = 'compressed';
 } else {
     config.env = 'development';
+    config.sassOutputStyle = 'expanded';
 }
 
 /**
@@ -26,7 +30,7 @@ if (isProduction) {
 const styles = (done) => {
     gulp.src( './src/styles/**/*.scss')
         .pipe(sourcemaps.init())
-        .pipe(sass({ outputStyle: 'compressed' }).on('error', sass.logError))
+        .pipe(sass({ outputStyle: config.sassOutputStyle }).on('error', sass.logError))
         .pipe(postcss([
             autoprefixer({ overrideBrowserslist: ['last 2 versions'] })
         ]))
@@ -105,17 +109,21 @@ const browserReload = (done) => {
  * Images
  */
 const compressImages = (done) => {
-    gulp.src([
+    let g = gulp.src([
         "./src/assets/images/**/*.jpg",
         "./src/assets/images/**/*.png",
         "./src/assets/images/**/*.gif",
         "./src/assets/images/**/*.svg"
-      ])
-     .pipe(imagemin({
-         progressive: true,
-         svgoPlugins: [{removeViewBox: false}]
-     }))
-     .pipe(gulp.dest('./dist/assets/images/'))
+    ])
+
+    if (useImageOptim) {
+        g = g.pipe(imagemin({
+            progressive: true,
+            svgoPlugins: [{removeViewBox: false}]
+        }))
+    }
+
+    g.pipe(gulp.dest('./dist/assets/images/'))
 
     done()
 }
