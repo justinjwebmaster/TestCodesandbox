@@ -41,7 +41,7 @@ const styles = (done) => {
  * JS - ES6
  */
 const javascript = (done) => {
-    gulp.src('./src/scripts/app.js')
+    gulp.src('./src/scripts/mains.js')
       .pipe(sourcemaps.init())
       .pipe(
         webpack({
