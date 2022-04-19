@@ -5,6 +5,8 @@
   "main": "src/index.html",
   "scripts": {
     "build": "npm run clean && npx mix --production",
+    "start": "npx mix watch",
+    "watch": "npx mix watch",
     "clean": "rimraf dist",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
